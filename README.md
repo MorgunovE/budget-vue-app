@@ -31,3 +31,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 5. add dir elements in plugins
 6. add index.js in elements
 7. Import elements in main.js
+8. data in app.vue
+9. BudgetList.vue add in component
+10. add budget list in app
+11. add list-item in budget list
