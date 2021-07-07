@@ -35,3 +35,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 9. BudgetList.vue add in component
 10. add budget list in app
 11. add list-item in budget list
+12. add alert in plugins
+13. add alert in budgetlist
+14. add TotalBalance in components
+15. add ttotalbalance in app

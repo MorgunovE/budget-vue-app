@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Form @submitForm="onFormSubmit" />
+    <!-- 15-2 -->
     <TotalBalance :total="totalBalance" />
     <BudgetList :list="list"/>
   </div>
@@ -9,14 +10,14 @@
 <script>
 import BudgetList from "@/components/BudgetList";
 import TotalBalance from "@/components/TotalBalance";
-import Form from "@/components/Form";
+// import Form from "@/components/Form";
 
 export default {
   name: "app",
   components: {
     BudgetList,
     TotalBalance,
-    Form
+    // Form
   },
   data: () => ({
     list: {
@@ -34,6 +35,7 @@ export default {
       }
     }
   }),
+  // 15-1
   computed: {
     totalBalance() {
       return Object.values(this.list).reduce(
