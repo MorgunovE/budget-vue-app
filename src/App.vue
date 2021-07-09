@@ -1,23 +1,26 @@
 <template>
   <div id="app">
+    <!-- 19-1 -->
     <Form @submitForm="onFormSubmit" />
     <!-- 15-2 -->
     <TotalBalance :total="totalBalance" />
-    <BudgetList :list="list"/>
+    <!-- 17 -->
+    <BudgetList @deleteItem="onDeleteItem" :list="list"/>
   </div>
 </template>
 
 <script>
 import BudgetList from "@/components/BudgetList";
 import TotalBalance from "@/components/TotalBalance";
-// import Form from "@/components/Form";
+// 19
+import Form from "@/components/Form";
 
 export default {
   name: "app",
   components: {
     BudgetList,
     TotalBalance,
-    // Form
+    Form
   },
   data: () => ({
     list: {
@@ -44,6 +47,7 @@ export default {
       );
     }
   },
+  // 17-1
   methods: {
     onDeleteItem(id) {
       this.$delete(this.list, id);

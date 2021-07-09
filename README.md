@@ -39,3 +39,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 13. add alert in budgetlist
 14. add TotalBalance in components
 15. add ttotalbalance in app
+16. add delete in budget list
+17. add delete in app
+18. add form in conponents
+19. add form in app
+20. add rules in From
+21. add submitForm in Form
