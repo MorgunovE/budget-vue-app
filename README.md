@@ -45,3 +45,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 19. add form in app
 20. add rules in From
 21. add submitForm in Form
+22. add ref in Form
+23. add submitForm in App

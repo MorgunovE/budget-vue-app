@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <!-- 19-1 -->
+    <!-- 23 -->
     <Form @submitForm="onFormSubmit" />
     <!-- 15-2 -->
     <TotalBalance :total="totalBalance" />
@@ -52,6 +53,7 @@ export default {
     onDeleteItem(id) {
       this.$delete(this.list, id);
     },
+    // 23
     onFormSubmit(data) {
       const newObj = {
         ...data,

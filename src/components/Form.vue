@@ -5,6 +5,7 @@
     <!-- 18-4 -->
     <!-- 20-1 -->
     <!-- 21 -->
+    <!-- 22 -->
     <ElForm :model="formData" ref="addItemForm" :rules="rules" lable-position="top">
       <!-- 18-5 -->
       <ElFormItem label="Type" prop="type">
@@ -56,6 +57,7 @@ export default {
   methods: {
     // 21-1
     onSubmit() {
+      // 22
       this.$refs.addItemForm.validate(valid => {
         if (valid) {
           this.$emit("submitForm", { ...this.formData });
